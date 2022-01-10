@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --rojo: #E63946;
+    --blanco: #F1FAEE;
+    --celeste: #A8DADC;
+    --celeste-oscuro: #457B9D;
+    --azul: #1D3557;
+    --txt-primario: #0f0f0f;
+    --txt-secundario: #8c8c8c;
+
+}
+body{
+    background: var(--blanco);
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+body, p{
+    margin: 0;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link-principal{
+    color: var(--blanco);
+    font-weight: 700;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.mt-15{
+    margin-top: 15px !important;
+}
+.mb-15{
+    margin-bottom: 15px !important;
+}
+.mb-5{
+    margin-bottom: 5px !important;
+}
+.navbar{
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+.navbar-contenedor{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-item{
+    display: flex;
+    margin-right: 30px;
+}
+.navbar-item:last-child{
+    margin-right: 0;
+}
+
+.navbar-titulo{
+    font-size: 32px;
+    font-weight: 700;
+    padding: 5px 0px;
+}
+.ddmenu{
+    background: var(--rojo);
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    width: 160px;
+    max-width: 160px;
+    top: 40px;
+    margin-left: -110px;
+    display: none;
+}
+.ddmenu p{
+    display: flex;
+    margin-bottom: 8px;
+    align-items: end;
+}
+.ddmenu p span{
+    margin-right: 10px;
+    font-size: 14px;
+}
+.ddmenu hr{
+    margin: 0;
+    color: var(--blanco);
+}
+.contenedor{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px 20px;
+    grid-template-areas: 
+        "contenedor-publicidad contenedor-publicidad contenedor-publicidad contenedor-publicidad"
+        "contenedor-central contenedor-central contenedor-central contenedor-lateral"; 
+}
+.contenedor-central{
+    grid-area: contenedor-central;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-rows: repeat(2, 1fr);*/
+    gap: 15px;
+    grid-auto-rows: min-content;
+}
+.contenedor-lateral{
+    grid-area: contenedor-lateral;
+    /* display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1; */
+}
+.contenedor-publicidad{
+    grid-area: contenedor-publicidad;
+    display: grid;
+    justify-content: center;
+}
+input{
+    width: 48%;
+}
+#resultado{
+    color: var(--celeste-oscuro);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.card:hover{
+    box-shadow: 0px 5px 15px #0000001F;
+}
+.card-body{
+    padding: 10px;
+}
+.card-img{
+    width: 100%;
+}
+.card-boton-wrapper{
+    display: flex;
+    gap: 10px;
+}
+.card-boton{
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.card-boton-principal{
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+.card-boton-secundario{
+    background-color: var(--celeste-oscuro);
+    color: var(--blanco);
+}
+.card-precio{
+    font-size: 24px;
+}
+.info{
+    background: var(--celeste);
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: -15px;
+    opacity:0;
+}
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: #E63946;
+    font-size: 22px!important;
+}
+.txt-secundario{
+    color: var(--txt-secundario);
+}
+.resumen{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+.resumen-titulo{
+    margin-bottom: 15px;
+}
+.resumen-producto-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.badge{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 1px 5px;
+    font-size: 13px;
+}
+.select{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Lato';
+    border-radius: 2px;
+    background-color: #fff;
+}

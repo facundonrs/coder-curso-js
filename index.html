@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Final</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-contenedor">
+            <div class="navbar-item">
+                <div class="navbar-titulo">Zaraza</div>
+            </div>
+            <div class="navbar-contenedor">
+                <div class="navbar-item">
+                    <a href="#" class="link link-principal" id="borrarCarrito">Borrar Carrito</a>
+                </div>
+                <div class="navbar-item" style="position: relative;">
+                    <a href="#" class="link link-principal" id="perfil">Mi Perfil</a>
+                    <div class="ddmenu"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor mt-15">
+
+        <div class="contenedor-publicidad" id="contenedor-publicidad"></div>
+
+        <div class="contenedor-central" id="contenedor-central"></div>
+
+        <div class="contenedor-lateral">
+            <div class="resumen">
+                <div class="resumen-titulo">Productos en carrito: </div>
+                <div id="resumen-producto" class="resumen-producto"></div>
+                <div>
+                    <select id="selectCuotas" class="select mb-5">
+                        <option value="1">1 cuota sin interés</option>
+                        <option value="3">3 cuotas 15% de interés</option>
+                        <option value="6">6 cuotas 30% de interés</option>
+                        <option value="12">12 cuotas 45% de interés</option>
+                    </select>
+                    <button id="calcularCuotas" class="card-boton card-boton-principal">Calcular Cuotas</button>
+                </div>
+                <div id="resultado"></div>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
